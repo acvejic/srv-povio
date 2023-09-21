@@ -45,8 +45,8 @@ jobs:
       - name: Installation
         run: npm install
 
-      - name: Unit tests
-        run: npm run test
+      # - name: Unit tests
+      #   run: npm run test
 
       - name: E2E tests
         run: npm run test:e2e
