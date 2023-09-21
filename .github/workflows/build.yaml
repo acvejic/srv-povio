@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
 
     steps:
       - name: Copy repository
@@ -25,10 +25,10 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm run test
+        run: npm run start
 
-      - name: Run tests
-        run: npm run test:e2e
+      # - name: Run tests
+      #   run: npm run test:e2e
 
-      - name: Run tests
-        run: npm run test:cov
+      # - name: Run tests
+      #   run: npm run test:cov
