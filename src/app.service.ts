@@ -13,7 +13,6 @@ export class AppService {
     const response = await this.connection.query(
         'SELECT version()',
     )
-
-    return `Hello World! PG Version: ${response.version}`;
+    return `Hello World! PG Version: ${response[0].version}`;
   }
 }
